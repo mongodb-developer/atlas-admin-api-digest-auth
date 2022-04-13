@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "urllib": "^2.38.0"
+  }
+}

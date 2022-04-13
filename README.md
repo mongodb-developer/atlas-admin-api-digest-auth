@@ -4,7 +4,7 @@ This repository demonstrates how to call the [MongoDB Atlas Administration API](
 
 ## Setup
 
-To connect to the Atlas Administration API, you need to generate an [organization API key](https://www.mongodb.com/docs/atlas/configure-api-access/#std-label-create-org-api-key).
+To connect to the Atlas Administration API, you need to generate an [organization API key](https://www.mongodb.com/docs/atlas/configure-api-access/#std-label-create-org-api-key). Make sure you add your IP address in the API access list!
 
 Then, export the following environment variables, where `ATLAS_USER` is your _public key_ and `ATLAS_USER_KEY` is your _private key_.
 

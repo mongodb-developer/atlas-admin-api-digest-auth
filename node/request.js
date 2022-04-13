@@ -9,7 +9,7 @@ const options = {
 urllib.request(baseUrl, options, (error, data, response) => {
   if (error || response.statusCode !== 200) {
     console.error(`Error: ${error}`);
-    console.log(`Status code: ${response.statusCode}`);
+    console.error(`Status code: ${response.statusCode}`);
   } else {
     console.log(JSON.parse(data));
   }

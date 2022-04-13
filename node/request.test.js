@@ -7,7 +7,7 @@ describe('Node.js request with digest auth', () => {
         require('./request');
 
         // Wait for the request to finish
-        await new Promise(r => setTimeout(r, 2000));
+        await new Promise(r => setTimeout(r, 4000));
 
         const loggedMessages = console.log.mock.calls[0];
         expect(loggedMessages.length).toBe(1);

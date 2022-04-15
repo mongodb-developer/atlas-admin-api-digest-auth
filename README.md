@@ -13,7 +13,11 @@ export ATLAS_USER=<public_key>
 export ATLAS_USER_KEY=<private_key>
 ```
 
-## Python Example
+## Usage
+
+The repository includes request examples for Python, Node.js and Ruby.
+
+### Python Example
 
 To run the Python example, execute:
 
@@ -23,7 +27,7 @@ pip install -r requirements.txt
 python ./request.py
 ```
 
-## Node.js Example
+### Node.js Example
 
 To run the Node.js example, execute:
 
@@ -33,7 +37,7 @@ npm install
 node ./request.js
 ```
 
-## Ruby Example
+### Ruby Example
 
 To run the Ruby example, execute:
 
@@ -49,6 +53,40 @@ If you don't have Bundler, you can install the `httparty` gem manually:
 cd ruby
 gem install httparty
 ruby ./request.rb
+```
+
+## Tests
+
+The repo includes a naive unit test for each of the examples. The tests execute the request and check the standard output for the expected success message.
+
+### Python Test
+
+To run the Python test, execute:
+
+```bash
+cd python
+pip install -r requirements.txt
+python -m unittest
+```
+
+### Node.js Test
+
+To run the Node.js test, execute:
+
+```bash
+cd node
+npm install
+npm test
+```
+
+### Ruby Test
+
+To run the Ruby test, execute:
+
+```bash
+cd ruby
+bundle install
+ruby test_request.rb
 ```
 
 ## Disclaimer

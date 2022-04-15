@@ -8,7 +8,7 @@ class TestStringMethods(unittest.TestCase):
     @patch('pprint.pprint')
     def test_request(self, mock_print):
         import request
-        time.sleep(4)
+        time.sleep(2)
 
         mock_print.assert_called_once()
         message = mock_print.call_args.args[0]

@@ -1,7 +1,7 @@
 require 'httparty'
 require 'json'
 
-baseUrl = 'https://cloud.mongodb.com/api/atlas/v1.0/'
+base_url = 'https://cloud.mongodb.com/api/atlas/v1.0/'
 options = {
   :digest_auth => {
     :username=>ENV['ATLAS_USER'],
@@ -9,6 +9,6 @@ options = {
   }
 }
 
-result = HTTParty.get(baseUrl, options)
+result = HTTParty.get(base_url, options)
 
 pp JSON.parse(result.body())

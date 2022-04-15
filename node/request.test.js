@@ -10,7 +10,7 @@ describe('Node.js request with digest auth', () => {
         await new Promise(r => setTimeout(r, 2000));
 
         const loggedMessages = console.log.mock.calls[0];
-        expect(loggedMessages.length).toBe(1);
+        expect(loggedMessages?.length).toBe(1);
 
         const message = loggedMessages[0];
 
